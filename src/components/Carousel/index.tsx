@@ -1,15 +1,19 @@
 import { CarouselProps } from '../../types';
+import Carousel from 'react-bootstrap/Carousel';
 
-const Carousel = ({ images }: CarouselProps) => {
-  console.log(images);
+const CarouselComponent = ({ images }: CarouselProps) => {
   if (!images || images.length === 0) {
     throw new Error('Carousel component requires images prop');
   }
   return (
-    <div>
-      <h1>Carousel</h1>
-    </div>
+    <Carousel>
+      {images.map((image, index) => (
+        <Carousel.Item key={`${image} - ${index}`}>
+          <img className='d-block w-100' src={image} alt='First slide' />
+        </Carousel.Item>
+      ))}
+    </Carousel>
   );
 };
 
-export default Carousel;
+export default CarouselComponent;

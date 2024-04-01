@@ -2,9 +2,10 @@ import Carousel from './components/Carousel';
 
 function App() {
   const imgs = [
-    'https://via.placeholder.com/150',
-    'https://via.placeholder.com/150',
-    'https://via.placeholder.com/150',
+    'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg',
+    'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_1.jpg',
+    'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_2.jpg',
+    'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_3.jpg',
   ];
   return (
     <div>
