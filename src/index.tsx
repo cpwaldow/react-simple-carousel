@@ -1,7 +1,7 @@
-import { CarouselProps } from '../../types';
+import { CarouselProps } from './types';
 import Carousel from 'react-bootstrap/Carousel';
 
-const CarouselComponent = ({ images }: CarouselProps) => {
+export const CarouselComponent = ({ images }: CarouselProps) => {
   if (!images || images.length === 0) {
     throw new Error('Carousel component requires images prop');
   }
@@ -15,5 +15,3 @@ const CarouselComponent = ({ images }: CarouselProps) => {
     </Carousel>
   );
 };
-
-export default CarouselComponent;
